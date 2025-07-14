@@ -14,6 +14,8 @@ const EthicalValues: React.FC = () => {
             Every decision we make is guided by our commitment to animal welfare, 
             environmental responsibility, and delivering the highest quality poultry to your family.
           </p>
+          <h3 className="text-4xl md:text-6xl font-heading font-bold text-gray-900 mt-12 mb-0">Ethics</h3>
+          <div className="w-24 h-1 bg-red-700 mx-auto mb-6"></div>
         </div>
 
         {/* ✅ Clean Image (no box) */}
@@ -21,7 +23,7 @@ const EthicalValues: React.FC = () => {
           <img
             src="/cards copy copy.png"
             alt="DY Poultry Farms Values - Cage Free, Animal Welfare, Steroid Free, Licensed Veterinarian"
-            className="w-full h-auto"
+            className="w-full h-auto" style={{ filter: 'brightness(1.15) contrast(1.15) saturate(1.1)' }}
             onError={(e) => {
               console.error('Cards image failed to load:', e);
               e.currentTarget.style.display = 'none';

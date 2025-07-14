@@ -1,12 +1,13 @@
-import React, { useState } from 'react';
-import { ChevronLeft, ChevronRight, Play, Camera, Award } from 'lucide-react';
+import React from 'react';
 
-const GallerySection: React.FC = () => {
+const Blog: React.FC = () => {
   return (
-    <>
+    <div className="min-h-screen bg-white">
+      {/* Blog Content Section */}
       <section className="py-20 bg-white min-h-screen flex items-center justify-center">
-        <h1 className="text-4xl font-bold text-gray-800">Gallery Coming Soon</h1>
+        <h1 className="text-4xl font-bold text-gray-800">Blog Coming Soon</h1>
       </section>
+
       {/* Bottom Image Section - Full image visible */}
       <section className="relative">
         <img
@@ -15,8 +16,8 @@ const GallerySection: React.FC = () => {
           className="w-full object-contain"
         />
       </section>
-    </>
+    </div>
   );
 };
 
-export default GallerySection;
+export default Blog; 

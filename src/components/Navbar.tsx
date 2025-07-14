@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import { Menu, X, Home, Book, Leaf, Phone } from 'lucide-react';
+import { Menu, X, Home, Book, Leaf, Phone, Camera } from 'lucide-react';
 
 interface NavbarProps {
   currentPage: string;
-  onPageChange: (page: 'home' | 'our-story' | 'sustainability' | 'contact-us') => void;
+  onPageChange: (page: 'home' | 'our-story' | 'sustainability' | 'contact-us' | 'gallery' | 'blog') => void;
 }
 
 const Navbar: React.FC<NavbarProps> = ({ currentPage, onPageChange }) => {
@@ -13,6 +13,8 @@ const Navbar: React.FC<NavbarProps> = ({ currentPage, onPageChange }) => {
     { id: 'home', label: 'Home', page: 'home' as const, icon: Home },
     { id: 'our-story', label: 'Our Story', page: 'our-story' as const, icon: Book },
     { id: 'sustainability', label: 'Sustainability', page: 'sustainability' as const, icon: Leaf },
+    { id: 'gallery', label: 'Gallery', page: 'gallery' as const, icon: Camera },
+    { id: 'blog', label: 'Blog', page: 'blog' as const, icon: Book },
     { id: 'contact-us', label: 'Contact Us', page: 'contact-us' as const, icon: Phone },
   ];
 
@@ -65,16 +67,29 @@ const Navbar: React.FC<NavbarProps> = ({ currentPage, onPageChange }) => {
                     <div className="absolute -bottom-1 left-0 right-0 h-0.5 bg-red-700"></div>
                   )}
                 </button>
+                <button
+                  onClick={() => onPageChange('gallery')}
+                  className={`text-lg font-heading font-bold transition-all duration-300 hover:text-red-700 relative ${
+                    currentPage === 'gallery'
+                      ? 'text-red-700'
+                      : 'text-gray-800'
+                  }`}
+                >
+                  Gallery
+                  {currentPage === 'gallery' && (
+                    <div className="absolute -bottom-1 left-0 right-0 h-0.5 bg-red-700"></div>
+                  )}
+                </button>
               </div>
 
               {/* Center Logo */}
-              <div className="flex justify-center flex-shrink-0 mt-2 z-10">
+              <div className="flex justify-center flex-shrink-0 mt-6 z-10">
                 <div className="cursor-pointer" onClick={() => onPageChange('home')}>
-                  <div className="bg-white p-4 rounded-lg shadow-lg border-2 border-gray-200">
+                  <div className="bg-white w-36 h-36 rounded-lg shadow-lg border-2 border-gray-200 flex items-center justify-center">
                     <img 
                       src="/Dy Poultry Vertical Transparent.png" 
                       alt="DY Poultry Farms" 
-                      className="h-32 w-auto hover:scale-105 transition-transform duration-300"
+                      className="max-w-[80%] max-h-[80%] object-contain hover:scale-105 transition-transform duration-300"
                     />
                   </div>
                 </div>
@@ -95,11 +110,32 @@ const Navbar: React.FC<NavbarProps> = ({ currentPage, onPageChange }) => {
                     <div className="absolute -bottom-1 left-0 right-0 h-0.5 bg-red-700"></div>
                   )}
                 </button>
-                <button 
+                <button
+                  onClick={() => onPageChange('blog')}
+                  className={`text-lg font-heading font-bold transition-all duration-300 hover:text-red-700 relative ${
+                    currentPage === 'blog'
+                      ? 'text-red-700'
+                      : 'text-gray-800'
+                  }`}
+                >
+                  Blog
+                  {currentPage === 'blog' && (
+                    <div className="absolute -bottom-1 left-0 right-0 h-0.5 bg-red-700"></div>
+                  )}
+                </button>
+                <button
                   onClick={() => onPageChange('contact-us')}
-                  className="bg-red-700 text-white px-6 py-3 rounded-lg font-heading font-bold hover:bg-red-800 transition-all duration-300 shadow-md hover:shadow-lg"
+                  className={`text-lg font-heading font-bold transition-all duration-300 hover:text-red-700 relative ${
+                    currentPage === 'contact-us'
+                      ? 'text-red-700'
+                      : 'text-gray-800'
+                  }`}
                 >
                   Contact Us
+                  <Phone className="inline-block w-5 h-5 ml-2 align-text-bottom" />
+                  {currentPage === 'contact-us' && (
+                    <div className="absolute -bottom-1 left-0 right-0 h-0.5 bg-red-700"></div>
+                  )}
                 </button>
               </div>
             </div>

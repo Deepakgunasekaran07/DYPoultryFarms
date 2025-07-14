@@ -78,7 +78,7 @@ const OurStory: React.FC = () => {
       <section className="py-20 bg-cream relative overflow-hidden">
         {/* From Our Founder Background Image */}
         <img
-          src="https://res.cloudinary.com/dlfitvhc0/image/upload/v1752230577/image_z1nphq.png"
+          src="https://res.cloudinary.com/dlfitvhc0/image/upload/v1752535132/chicken_foot_olomkr.png"
           alt="From Our Founder Background"
           className="absolute inset-0 w-full h-full object-cover z-0"
         />
@@ -92,16 +92,16 @@ const OurStory: React.FC = () => {
             <div className="w-24 h-1 bg-black mx-auto"></div>
           </div>
           
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-16 items-start">
             {/* Left Side - Founder Photo */}
-            <div className="flex justify-center lg:justify-end">
+            <div className="flex justify-start lg:col-span-1">
               <div className="relative">
-                <div className="w-80 h-80 bg-gradient-to-br from-barn to-accent-red rounded-2xl shadow-barn border-4 border-cream flex items-center justify-center overflow-hidden">
+                <div className="w-96 h-96 bg-gradient-to-br from-barn to-accent-red rounded-2xl shadow-barn border-4 border-cream flex items-center justify-center overflow-hidden">
                   {/* Founder photo */}
                   <img
                     src="https://res.cloudinary.com/dlfitvhc0/image/upload/v1752230942/e32a5120-7f39-45ed-8d61-606329cdb826_gostrb.jpg"
                     alt="Founder"
-                    className="w-72 h-72 object-cover rounded-xl"
+                    className="w-88 h-88 object-cover rounded-xl"
                   />
                 </div>
                 {/* Decorative elements */}
@@ -111,7 +111,7 @@ const OurStory: React.FC = () => {
             </div>
 
             {/* Right Side - Content */}
-            <div className="space-y-8">
+            <div className="space-y-8 lg:col-span-2">
               <div>
                 <h3 className="text-3xl md:text-4xl font-heading font-bold text-neutral-800 mb-6">
                   Why He Started
@@ -130,7 +130,7 @@ const OurStory: React.FC = () => {
                   Future Goals
                 </h3>
                 <p className="text-lg md:text-xl text-black leading-relaxed font-body">
-                  "Our vision is to become Karnataka's most trusted name in ethical poultry farming. 
+                  "Our vision is to become Andhra Pradesh's most trusted name in ethical poultry farming. 
                   We're expanding our capacity to serve more families while maintaining our commitment 
                   to traditional values, sustainable practices, and the highest standards of animal welfare. 
                   Every step we take is guided by our mission to raise chickens the right way."
@@ -138,7 +138,7 @@ const OurStory: React.FC = () => {
               </div>
               
               <div className="pt-6 border-t-2 border-neutral-200">
-                <p className="font-heading font-bold text-black text-2xl">— Mavayya</p>
+                <p className="font-heading font-bold text-black text-2xl">— Venkataranama reddy</p>
                 <p className="text-black/80 mt-2 font-body text-lg">Founder, DY Poultry Farms</p>
               </div>
             </div>
@@ -173,12 +173,12 @@ const OurStory: React.FC = () => {
                     alt="Poultry Wellness"
                     className="absolute inset-0 w-full h-full object-cover z-0"
                   />
-                  {/* Black overlay for readability */}
-                  <div className="absolute inset-0 bg-black/30 z-10"></div>
+                  {/* Subtle black overlay for readability */}
+                  <div className="absolute inset-0 bg-black/20 z-10"></div>
                   <div className="relative z-20 flex flex-col items-center justify-center w-full h-full">
-                    <div className="w-20 h-20 bg-barn rounded-full flex items-center justify-center mb-6 shadow-lg">
-                      <span className="text-3xl font-heading font-bold text-white">1</span>
-                    </div>
+                  <div className="w-20 h-20 bg-white/20 border-2 border-white rounded-full flex items-center justify-center mb-6 shadow-lg">
+  <span className="text-3xl font-heading font-bold text-white">1</span>
+</div>
                     <h3 className="text-2xl font-heading font-bold text-gray-100 text-center leading-tight">
                       Poultry Wellness
                     </h3>
@@ -186,15 +186,15 @@ const OurStory: React.FC = () => {
                 </div>
 
                 {/* Back of Card */}
-                <div className="absolute inset-0 w-full h-full backface-hidden rotate-y-180 rounded-xl shadow-barn border-2 border-barn flex flex-col items-center justify-center p-8 text-white overflow-hidden">
+                <div className="absolute inset-0 w-full h-full backface-hidden rotate-y-180 rounded-xl shadow-barn border-2 border-barn flex flex-col items-center justify-center p-8 overflow-hidden">
                   {/* Poultry Wellness Background Image */}
                   <img
                     src="https://res.cloudinary.com/dlfitvhc0/image/upload/v1752221110/photo_inz1nk.jpg"
                     alt="Poultry Wellness"
                     className="absolute inset-0 w-full h-full object-cover z-0"
                   />
-                  {/* Black overlay for readability */}
-                  <div className="absolute inset-0 bg-black/30 z-10"></div>
+                  {/* Subtle black overlay for readability */}
+                  <div className="absolute inset-0 bg-black/20 z-10"></div>
                   <div className="relative z-20 flex flex-col items-center justify-center w-full h-full">
                     <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mb-6">
                       <span className="text-2xl font-heading font-bold text-white">1</span>
@@ -233,15 +233,15 @@ const OurStory: React.FC = () => {
                 </div>
 
                 {/* Back of Card */}
-                <div className="absolute inset-0 w-full h-full backface-hidden rotate-y-180 rounded-xl shadow-barn border-2 border-barn flex flex-col items-center justify-center p-8 text-white overflow-hidden">
+                <div className="absolute inset-0 w-full h-full backface-hidden rotate-y-180 rounded-xl shadow-barn border-2 border-barn flex flex-col items-center justify-center p-8 overflow-hidden">
                   {/* Humane Practices Background Image */}
                   <img
                     src="https://res.cloudinary.com/dlfitvhc0/image/upload/v1752221820/Screenshot_2025-07-11_at_1.45.45_PM_i3ufbf.png"
                     alt="Humane Practices"
                     className="absolute inset-0 w-full h-full object-cover z-0"
                   />
-                  {/* Black overlay for readability */}
-                  <div className="absolute inset-0 bg-black/30 z-10"></div>
+                  {/* Subtle black overlay for readability */}
+                  <div className="absolute inset-0 bg-black/20 z-10"></div>
                   <div className="relative z-20 flex flex-col items-center justify-center w-full h-full">
                     <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mb-6">
                       <span className="text-2xl font-heading font-bold text-white">2</span>
@@ -280,15 +280,15 @@ const OurStory: React.FC = () => {
                 </div>
 
                 {/* Back of Card */}
-                <div className="absolute inset-0 w-full h-full backface-hidden rotate-y-180 rounded-xl shadow-barn border-2 border-barn flex flex-col items-center justify-center p-8 text-white overflow-hidden">
+                <div className="absolute inset-0 w-full h-full backface-hidden rotate-y-180 rounded-xl shadow-barn border-2 border-barn flex flex-col items-center justify-center p-8 overflow-hidden">
                   {/* Fresh & Safe Background Image */}
                   <img
                     src="https://res.cloudinary.com/dlfitvhc0/image/upload/v1752221981/unnamed_copy_oxiumm.png"
                     alt="Fresh & Safe"
                     className="absolute inset-0 w-full h-full object-cover z-0"
                   />
-                  {/* Black overlay for readability */}
-                  <div className="absolute inset-0 bg-black/30 z-10"></div>
+                  {/* Subtle black overlay for readability */}
+                  <div className="absolute inset-0 bg-black/20 z-10"></div>
                   <div className="relative z-20 flex flex-col items-center justify-center w-full h-full">
                     <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mb-6">
                       <span className="text-2xl font-heading font-bold text-white">3</span>
@@ -327,15 +327,15 @@ const OurStory: React.FC = () => {
                 </div>
 
                 {/* Back of Card */}
-                <div className="absolute inset-0 w-full h-full backface-hidden rotate-y-180 rounded-xl shadow-barn border-2 border-barn flex flex-col items-center justify-center p-8 text-white overflow-hidden">
+                <div className="absolute inset-0 w-full h-full backface-hidden rotate-y-180 rounded-xl shadow-barn border-2 border-barn flex flex-col items-center justify-center p-8 overflow-hidden">
                   {/* Expert Team Background Image */}
                   <img
                     src="https://res.cloudinary.com/dlfitvhc0/image/upload/v1752222116/unnamed_team_obhiz0.png"
                     alt="Expert Team"
                     className="absolute inset-0 w-full h-full object-cover z-0"
                   />
-                  {/* Black overlay for readability */}
-                  <div className="absolute inset-0 bg-black/30 z-10"></div>
+                  {/* Subtle black overlay for readability */}
+                  <div className="absolute inset-0 bg-black/20 z-10"></div>
                   <div className="relative z-20 flex flex-col items-center justify-center w-full h-full">
                     <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mb-6">
                       <span className="text-2xl font-heading font-bold text-white">4</span>
@@ -352,6 +352,15 @@ const OurStory: React.FC = () => {
             </div>
           </div>
         </div>
+      </section>
+
+      {/* Bottom Image Section - Full image visible */}
+      <section className="relative">
+        <img
+          src="https://res.cloudinary.com/dlfitvhc0/image/upload/v1752235157/WhatsApp_Image_2025-07-11_at_5.28.42_PM_nxbdi8.jpg"
+          alt="Contact and Footer Background"
+          className="w-full object-contain"
+        />
       </section>
     </div>
   );
