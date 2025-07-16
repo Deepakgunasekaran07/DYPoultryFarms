@@ -68,118 +68,6 @@ const MeetTheFarm: React.FC = () => {
   );
 };
 
-const testimonials = [
-  {
-    quote:
-      "DY Poultry Farms provides the highest quality, most flavorful poultry I've ever used in my restaurant. My customers can taste the difference.",
-    name: 'Sarah Johnson',
-    role: 'Local Chef',
-    image:
-      'https://randomuser.me/api/portraits/women/68.jpg',
-  },
-  {
-    quote:
-      "Once you try ethically raised chicken from DY Farms, you can never go back to store-bought. The quality and taste are incomparable.",
-    name: 'James Thompson',
-    role: 'Loyal Customer',
-    image:
-      'https://randomuser.me/api/portraits/men/32.jpg',
-  },
-  {
-    quote:
-      "I recommend DY Poultry Farms to all my clients who care about where their food comes from. Truly sustainable and nutritious poultry.",
-    name: 'Elena Rodriguez',
-    role: 'Nutritionist',
-    image:
-      'https://randomuser.me/api/portraits/women/42.jpg',
-  },
-];
-
-const Testimonials: React.FC = () => {
-  const [visibleCards, setVisibleCards] = React.useState<number[]>([]);
-
-  React.useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            const index = parseInt(entry.target.getAttribute('data-index') || '0');
-            setVisibleCards((prev) => {
-              if (!prev.includes(index)) {
-                return [...prev, index];
-              }
-              return prev;
-            });
-          }
-        });
-      },
-      {
-        threshold: 0.3,
-        rootMargin: '0px 0px -50px 0px',
-      }
-    );
-
-    const cards = document.querySelectorAll('[data-testimonial-card]');
-    cards.forEach((card) => observer.observe(card));
-
-    return () => {
-      cards.forEach((card) => observer.unobserve(card));
-    };
-  }, []);
-
-  return (
-    <div className="bg-[#f8f2e9] py-20 px-4">
-      <div className="text-center mb-12">
-        <p className="uppercase text-sm tracking-wide text-brown-500 font-semibold mb-2">
-          Testimonials
-        </p>
-        <h2 className="text-4xl font-bold text-[#7c4a1e]">
-          What Our Customers Say
-        </h2>
-        <p className="mt-4 max-w-2xl mx-auto text-[#946c4f] text-lg">
-          We're proud to serve our community with the highest quality poultry products.
-          Here's what some of our customers have to say about DY Poultry Farms.
-        </p>
-      </div>
-
-      <div className="flex flex-col space-y-16 max-w-4xl mx-auto">
-        {testimonials.map((t, idx) => (
-          <div 
-            key={idx} 
-            data-testimonial-card
-            data-index={idx}
-            className={`flex flex-col md:flex-row items-start md:items-center gap-6 transition-all duration-1000 ease-out ${
-              visibleCards.includes(idx)
-                ? 'opacity-100 translate-y-0'
-                : 'opacity-0 translate-y-8'
-            }`}
-            style={{
-              transitionDelay: `${idx * 200}ms`
-            }}
-          >
-            {/* Profile Image */}
-            <img
-              src={t.image}
-              alt={t.name}
-              className="w-16 h-16 rounded-full shadow-md border-2 border-white"
-            />
-
-            {/* Quote */}
-            <div className="relative bg-white/80 p-6 rounded-xl shadow-sm">
-              <span className="absolute -top-5 -left-5 text-4xl text-[#e2c4a6] opacity-40">"</span>
-              <p className="italic text-[#7a563a] text-lg mb-4">"{t.quote}"</p>
-              <div>
-                <p className="font-bold text-[#5b3a21]">{t.name}</p>
-                <p className="text-[#96724e]">{t.role}</p>
-              </div>
-            </div>
-          </div>
-        ))}
-      </div>
-    </div>
-  );
-};
-
 interface HomeProps {
   onPageChange?: (page: Page) => void;
 }
@@ -195,15 +83,14 @@ const Home: React.FC<HomeProps> = ({ onPageChange }) => {
       <HeroSection onLearnMore={handleLearnMore} />
       <EthicalValues />
       <MeetTheFarm />
-      <Testimonials />
       {/* Bottom Image Section - Full image visible */}
-      <section className="relative">
-        <img
-          src="https://res.cloudinary.com/dlfitvhc0/image/upload/v1752235157/WhatsApp_Image_2025-07-11_at_5.28.42_PM_nxbdi8.jpg"
-          alt="Contact and Footer Background"
-          className="w-full object-contain"
-        />
-      </section>
+      <section className="relative h-[300px] overflow-hidden">
+  <img
+    src="https://res.cloudinary.com/dlfitvhc0/image/upload/v1752584462/5a04ac7e-941d-412c-a175-34762d2256ff_audxjg.jpg"
+    alt="Contact and Footer Background"
+    className="w-full h-full object-cover object-bottom"
+  />
+</section>
     </div>
   );
 };

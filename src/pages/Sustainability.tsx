@@ -2,7 +2,7 @@ import React from 'react';
 import { motion, Variants } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
-// Animation wrapper
+// Reusable animation wrapper
 const FadeSlideIn = ({
   children,
   direction = 'left',
@@ -44,28 +44,19 @@ const FadeSlideIn = ({
 
 const Sustainability: React.FC = () => {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="w-full bg-white overflow-hidden">
 
-      {/* ✅ Hero Section - Text Left, Image Right (Split Layout) */}
-      <section className="flex flex-col md:flex-row items-center bg-cream min-h-[90vh]">
-        {/* Text Left */}
-        <div className="w-full md:w-1/2 px-6 py-16 md:py-0 flex items-center justify-center">
-          <FadeSlideIn direction="left">
-            <div className="max-w-xl space-y-6 text-left">
-              <h1 className="text-4xl md:text-6xl font-bold font-heading text-black">
-                Sustainability
-              </h1>
-              <div className="w-24 h-1 bg-barn mb-4"></div>
-              <p className="text-lg md:text-xl leading-relaxed text-neutral-800 font-body">
-                "To us, sustainability is about responsibly managing our land, water, and feed,
-                while upholding and advocating for the humane care of our most important responsibility — our chickens."
-              </p>
-            </div>
-          </FadeSlideIn>
+      {/* Top Split Layout: Text + Big Image */}
+      <section className="flex flex-col md:flex-row w-full min-h-[80vh]">
+        {/* Left: Text */}
+        <div className="w-full md:w-[35%] bg-gray-100 flex items-center justify-center px-4 py-8 md:py-0">
+          <h1 className="text-4xl md:text-5xl font-bold text-red-600 text-left">
+            Sustainability
+          </h1>
         </div>
 
-        {/* Image Right */}
-        <div className="w-full md:w-1/2">
+        {/* Right: Image */}
+        <div className="w-full md:w-[65%] h-[80vh]">
           <img
             src="https://res.cloudinary.com/dlfitvhc0/image/upload/v1752228432/unnamed_copy_2_aax63p.png"
             alt="Sustainability"
@@ -74,19 +65,32 @@ const Sustainability: React.FC = () => {
         </div>
       </section>
 
+      {/* Below Image: Intro Paragraph */}
+      <section className="max-w-6xl mx-auto px-6 py-16">
+        <div className="space-y-6 text-left">
+          <p className="text-lg md:text-xl text-neutral-700 leading-relaxed font-body">
+            To us, sustainability is about responsibly managing our land, water, and feed,
+            while upholding and advocating for the humane care of our most important responsibility — our chickens.
+          </p>
+          <p className="text-lg md:text-xl text-neutral-700 leading-relaxed font-body">
+            We're proud to operate in ways that are aligned with our values, helping both the environment and our communities. Through clean energy, ethical farming, and waste recycling, we aim to create a better tomorrow.
+          </p>
+        </div>
+      </section>
+
       {/* 1. Animal Welfare */}
-      <section className="py-20 bg-amber-50">
+      <section className="py-20 bg-amber-50 min-h-screen flex items-center">
         <FadeSlideIn direction="left">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              {/* Left Side - Topic */}
+              {/* Title */}
               <div className="text-left">
                 <h2 className="text-4xl md:text-5xl font-heading font-bold text-neutral-800 mb-6">
                   Animal Welfare
                 </h2>
                 <div className="w-24 h-1 bg-barn mb-8"></div>
               </div>
-              {/* Right Side - Content */}
+              {/* Content */}
               <div>
                 <p className="text-lg md:text-xl text-neutral-700 leading-relaxed font-body text-left">
                   Animal welfare isn't just a standard—it's a responsibility we take seriously. We place the well-being of our birds at the heart of everything we do.
@@ -100,19 +104,12 @@ const Sustainability: React.FC = () => {
       </section>
 
       {/* 2. Solar Energy */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-white min-h-screen flex items-center">
         <FadeSlideIn direction="left">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              {/* Left Side - Topic */}
-              <div className="text-left">
-                <h2 className="text-4xl md:text-5xl font-heading font-bold text-neutral-800 mb-6">
-                  Powered by the Sun, Guided by Care
-                </h2>
-                <div className="w-24 h-1 bg-barn mb-8"></div>
-              </div>
-              {/* Right Side - Content */}
-              <div className="space-y-6">
+              {/* Content */}
+              <div className="space-y-6 order-2 lg:order-1">
                 <p className="text-lg md:text-xl text-neutral-700 leading-relaxed font-body text-left">
                   Our move into solar energy is rooted in purpose—to be part of the solution to the planet's growing environmental and energy needs.
                   By tapping into the power of the sun, we're actively contributing to India's clean energy mission, cutting down emissions, and building a greener future.
@@ -124,24 +121,31 @@ const Sustainability: React.FC = () => {
                   This isn't just an initiative—it's a reflection of our values, a commitment to sustainability, and a way of giving back to the environment that supports us.
                 </p>
               </div>
+              {/* Title */}
+              <div className="text-left order-1 lg:order-2">
+                <h2 className="text-4xl md:text-5xl font-heading font-bold text-neutral-800 mb-6">
+                  Powered by the Sun, Guided by Care
+                </h2>
+                <div className="w-24 h-1 bg-barn mb-8"></div>
+              </div>
             </div>
           </div>
         </FadeSlideIn>
       </section>
 
       {/* 3. Sustainable Waste Management */}
-      <section className="py-20 bg-cream">
+      <section className="py-20 bg-cream min-h-screen flex items-center">
         <FadeSlideIn direction="left">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              {/* Left Side - Topic */}
+              {/* Title */}
               <div className="text-left">
                 <h2 className="text-4xl md:text-5xl font-heading font-bold text-neutral-800 mb-6">
                   Sustainable Waste Management
                 </h2>
                 <div className="w-24 h-1 bg-barn mb-8"></div>
               </div>
-              {/* Right Side - Content */}
+              {/* Content */}
               <div>
                 <p className="text-lg md:text-xl text-neutral-700 leading-relaxed font-body text-left">
                   In line with our commitment to responsible farming, we follow a closed-loop waste management system that reflects both sustainability and environmental stewardship.
@@ -153,12 +157,12 @@ const Sustainability: React.FC = () => {
         </FadeSlideIn>
       </section>
 
-      {/* Bottom Image Section - Full image visible */}
-      <section className="relative">
+      {/* Bottom Image Section */}
+      <section className="relative h-[300px] overflow-hidden">
         <img
-          src="https://res.cloudinary.com/dlfitvhc0/image/upload/v1752235157/WhatsApp_Image_2025-07-11_at_5.28.42_PM_nxbdi8.jpg"
-          alt="Contact and Footer Background"
-          className="w-full object-contain"
+          src="https://res.cloudinary.com/dlfitvhc0/image/upload/v1752584462/5a04ac7e-941d-412c-a175-34762d2256ff_audxjg.jpg"
+          alt="Footer Background"
+          className="w-full h-full object-cover object-bottom"
         />
       </section>
     </div>

@@ -85,7 +85,11 @@ const Footer: React.FC<FooterProps> = ({ onPageChange }) => {
               </div>
               <div className="flex items-start justify-center lg:justify-end space-x-3">
                 <MapPin className="w-5 h-5 text-gray-400 flex-shrink-0 mt-0.5" />
-                <span className="text-gray-300 font-body">Karnataka, India</span>
+                <span className="text-gray-300 font-body">Andhra Pradesh, India</span>
+              </div>
+              <div className="flex items-start justify-center lg:justify-end space-x-3 mt-1">
+                <MapPin className="w-5 h-5 text-gray-400 flex-shrink-0 mt-0.5" />
+                <span className="text-gray-300 font-body">Tamilnadu, India</span>
               </div>
             </div>
           </div>

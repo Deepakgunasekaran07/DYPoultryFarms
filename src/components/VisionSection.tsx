@@ -9,8 +9,8 @@ const VisionSection: React.FC = () => {
           {/* Left Side - Content */}
           <div className="space-y-8">
             <div>
-              <h2 className="text-4xl md:text-6xl font-heading font-bold text-gray-900 mb-8 leading-tight">
-                Raising Happy, Healthy Chickens 
+              <h2 className="text-4xl md:text-6xl font-heading font-bold text-gray-900 mb-6">
+                Raising happy, healthy, wholesome chickens.
                 <span className="text-red-700 block mt-2">for Your Family</span>
               </h2>
               

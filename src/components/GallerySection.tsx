@@ -8,13 +8,13 @@ const GallerySection: React.FC = () => {
         <h1 className="text-4xl font-bold text-gray-800">Gallery Coming Soon</h1>
       </section>
       {/* Bottom Image Section - Full image visible */}
-      <section className="relative">
-        <img
-          src="https://res.cloudinary.com/dlfitvhc0/image/upload/v1752235157/WhatsApp_Image_2025-07-11_at_5.28.42_PM_nxbdi8.jpg"
-          alt="Contact and Footer Background"
-          className="w-full object-contain"
-        />
-      </section>
+      <section className="relative h-[300px] overflow-hidden">
+  <img
+    src="https://res.cloudinary.com/dlfitvhc0/image/upload/v1752584462/5a04ac7e-941d-412c-a175-34762d2256ff_audxjg.jpg"
+    alt="Contact and Footer Background"
+    className="w-full h-full object-cover object-bottom"
+  />
+</section>
     </>
   );
 };

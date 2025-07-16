@@ -19,21 +19,13 @@ const OurStory: React.FC = () => {
               
               <div className="space-y-6 text-lg md:text-xl text-black leading-relaxed font-body animate-slide-up">
                 <p>
-                  At DY Poultry Farms, we believe that the food your family eats matters. 
-                  That's why we've dedicated ourselves to raising chickens with the same care 
-                  and attention we'd want for our own loved ones.
+                  Established in 2024, we operate modern farms with a capacity of 1.25 lakh birds and are currently expanding with a new facility to house an additional 1 lakh birds.
                 </p>
-                
                 <p>
-                  Every bird is treated with dignity, respect, and love. Our commitment to 
-                  traditional farming values combined with modern care ensures the finest 
-                  quality poultry for your family table.
+                  Our focus on biosecurity and hygiene is backed by state-of-the-art infrastructure and a dedicated team driven by care and precision. We believe that healthy birds lead to healthy meals, and we raise them with that purpose in mind.
                 </p>
-                
                 <p>
-                  We understand that healthy birds lead to healthy meals, and we raise them 
-                  with that purpose in mind - creating a legacy of trust, quality, and 
-                  ethical farming practices.
+                  Our farms are equipped with fully automated Environment Control (EC) systems that regulate temperature, humidity, airflow, and lighting throughout the day. This ensures optimal living conditions tailored to each stage of bird growth, reduces stress, boosts immunity, and supports overall health and performance. Within this well-managed environment, our birds are free to roam, stay active, and express natural behaviors, keeping them happy, healthy, and thriving.
                 </p>
               </div>
             </div>
@@ -75,15 +67,7 @@ const OurStory: React.FC = () => {
       </section>
 
       {/* Founder Message */}
-      <section className="py-20 bg-cream relative overflow-hidden">
-        {/* From Our Founder Background Image */}
-        <img
-          src="https://res.cloudinary.com/dlfitvhc0/image/upload/v1752535132/chicken_foot_olomkr.png"
-          alt="From Our Founder Background"
-          className="absolute inset-0 w-full h-full object-cover z-0"
-        />
-        {/* Black overlay for readability */}
-        <div className="absolute inset-0 bg-black/20 z-10"></div>
+      <section className="py-20 bg-amber-50 relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-20">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-heading font-bold text-black mb-6">
@@ -199,10 +183,10 @@ const OurStory: React.FC = () => {
                     <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mb-6">
                       <span className="text-2xl font-heading font-bold text-white">1</span>
                     </div>
-                    <h3 className="text-xl font-heading font-bold mb-4 text-center">
+                    <h3 className="text-xl font-heading font-bold mb-4 text-center text-white">
                       Poultry Wellness
                     </h3>
-                    <p className="text-sm leading-relaxed text-center text-white/90 font-body">
+                    <p className="text-base md:text-lg leading-relaxed text-center text-white/90 font-body">
                       Happy, healthy birds raised in state-of-the-art EC poultry houses with optimal conditions for their wellbeing and natural behavior.
                     </p>
                   </div>
@@ -223,7 +207,7 @@ const OurStory: React.FC = () => {
                   {/* Black overlay for readability */}
                   <div className="absolute inset-0 bg-black/30 z-10"></div>
                   <div className="relative z-20 flex flex-col items-center justify-center w-full h-full">
-                    <div className="w-20 h-20 bg-barn rounded-full flex items-center justify-center mb-6 shadow-lg">
+                    <div className="w-20 h-20 bg-white/20 border-2 border-white rounded-full flex items-center justify-center mb-6 shadow-lg">
                       <span className="text-3xl font-heading font-bold text-white">2</span>
                     </div>
                     <h3 className="text-2xl font-heading font-bold text-gray-100 text-center leading-tight">
@@ -246,10 +230,10 @@ const OurStory: React.FC = () => {
                     <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mb-6">
                       <span className="text-2xl font-heading font-bold text-white">2</span>
                     </div>
-                    <h3 className="text-xl font-heading font-bold mb-4 text-center">
+                    <h3 className="text-xl font-heading font-bold mb-4 text-center text-white">
                       Humane Practices
                     </h3>
-                    <p className="text-sm leading-relaxed text-center text-white/90 font-body">
+                    <p className="text-base md:text-lg leading-relaxed text-center text-white/90 font-body">
                       Our farming methods are rooted in care, dignity, and ethical treatment, ensuring every bird lives comfortably and stress-free.
                     </p>
                   </div>
@@ -263,14 +247,14 @@ const OurStory: React.FC = () => {
                 <div className="absolute inset-0 w-full h-full backface-hidden rounded-xl shadow-wood border-2 border-neutral-200 flex flex-col items-center justify-center p-8 overflow-hidden">
                   {/* Fresh & Safe Background Image */}
                   <img
-                    src="https://res.cloudinary.com/dlfitvhc0/image/upload/v1752221981/unnamed_copy_oxiumm.png"
+                    src="https://res.cloudinary.com/dlfitvhc0/image/upload/v1752590277/unnamed_ljop1t.png"
                     alt="Fresh & Safe"
                     className="absolute inset-0 w-full h-full object-cover z-0"
                   />
                   {/* Black overlay for readability */}
                   <div className="absolute inset-0 bg-black/30 z-10"></div>
                   <div className="relative z-20 flex flex-col items-center justify-center w-full h-full">
-                    <div className="w-20 h-20 bg-barn rounded-full flex items-center justify-center mb-6 shadow-lg">
+                    <div className="w-20 h-20 bg-white/20 border-2 border-white rounded-full flex items-center justify-center mb-6 shadow-lg">
                       <span className="text-3xl font-heading font-bold text-white">3</span>
                     </div>
                     <h3 className="text-2xl font-heading font-bold text-gray-100 text-center leading-tight">
@@ -283,7 +267,7 @@ const OurStory: React.FC = () => {
                 <div className="absolute inset-0 w-full h-full backface-hidden rotate-y-180 rounded-xl shadow-barn border-2 border-barn flex flex-col items-center justify-center p-8 overflow-hidden">
                   {/* Fresh & Safe Background Image */}
                   <img
-                    src="https://res.cloudinary.com/dlfitvhc0/image/upload/v1752221981/unnamed_copy_oxiumm.png"
+                    src="https://res.cloudinary.com/dlfitvhc0/image/upload/v1752590277/unnamed_ljop1t.png"
                     alt="Fresh & Safe"
                     className="absolute inset-0 w-full h-full object-cover z-0"
                   />
@@ -293,10 +277,10 @@ const OurStory: React.FC = () => {
                     <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mb-6">
                       <span className="text-2xl font-heading font-bold text-white">3</span>
                     </div>
-                    <h3 className="text-xl font-heading font-bold mb-4 text-center">
+                    <h3 className="text-xl font-heading font-bold mb-4 text-center text-white">
                       Fresh & Safe
                     </h3>
-                    <p className="text-sm leading-relaxed text-center text-white/90 font-body">
+                    <p className="text-base md:text-lg leading-relaxed text-center text-white/90 font-body">
                       Hygienic processing and zero-compromise freshness from farm to table, with rigorous quality controls and safety standards.
                     </p>
                   </div>
@@ -317,7 +301,7 @@ const OurStory: React.FC = () => {
                   {/* Black overlay for readability */}
                   <div className="absolute inset-0 bg-black/30 z-10"></div>
                   <div className="relative z-20 flex flex-col items-center justify-center w-full h-full">
-                    <div className="w-20 h-20 bg-barn rounded-full flex items-center justify-center mb-6 shadow-lg">
+                    <div className="w-20 h-20 bg-white/20 border-2 border-white rounded-full flex items-center justify-center mb-6 shadow-lg">
                       <span className="text-3xl font-heading font-bold text-white">4</span>
                     </div>
                     <h3 className="text-2xl font-heading font-bold text-gray-100 text-center leading-tight">
@@ -340,10 +324,10 @@ const OurStory: React.FC = () => {
                     <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mb-6">
                       <span className="text-2xl font-heading font-bold text-white">4</span>
                     </div>
-                    <h3 className="text-xl font-heading font-bold mb-4 text-center">
+                    <h3 className="text-xl font-heading font-bold mb-4 text-center text-white">
                       Expert Team
                     </h3>
-                    <p className="text-sm leading-relaxed text-center text-white/90 font-body">
+                    <p className="text-base md:text-lg leading-relaxed text-center text-white/90 font-body">
                       A people-first farm culture where trained professionals are passionate about animal welfare, quality, and sustainable farming.
                     </p>
                   </div>
@@ -355,13 +339,13 @@ const OurStory: React.FC = () => {
       </section>
 
       {/* Bottom Image Section - Full image visible */}
-      <section className="relative">
-        <img
-          src="https://res.cloudinary.com/dlfitvhc0/image/upload/v1752235157/WhatsApp_Image_2025-07-11_at_5.28.42_PM_nxbdi8.jpg"
-          alt="Contact and Footer Background"
-          className="w-full object-contain"
-        />
-      </section>
+      <section className="relative h-[300px] overflow-hidden">
+  <img
+    src="https://res.cloudinary.com/dlfitvhc0/image/upload/v1752584462/5a04ac7e-941d-412c-a175-34762d2256ff_audxjg.jpg"
+    alt="Contact and Footer Background"
+    className="w-full h-full object-cover object-bottom"
+  />
+</section>
     </div>
   );
 };
