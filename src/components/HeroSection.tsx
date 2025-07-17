@@ -7,7 +7,7 @@ interface HeroSectionProps {
 const HeroSection: React.FC<HeroSectionProps> = ({ onLearnMore }) => {
   return (
     <>
-      <section className="relative min-h-screen flex items-center overflow-hidden">
+      <section className="relative min-h-[90vh] flex items-center overflow-hidden">
         {/* Background Image */}
         <div className="absolute inset-0">
           <img
@@ -18,7 +18,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onLearnMore }) => {
           <div className="absolute inset-0 bg-black/10"></div>
         </div>
 
-        <div className="relative z-10 w-full max-w-7xl mx-auto px-6 lg:px-12 flex justify-start items-center min-h-screen">
+        <div className="relative z-10 w-full max-w-7xl mx-auto px-6 lg:px-12 flex justify-start items-center min-h-[90vh]">
           {/* Content Aligned Left */}
           <div className="max-w-2xl space-y-6 text-left">
             <h1 className="text-4xl md:text-6xl font-bold text-white leading-tight drop-shadow-lg">
@@ -26,7 +26,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onLearnMore }) => {
               <span className="text-white">Family Table</span>
             </h1>
             <p className="text-lg md:text-2xl text-white drop-shadow-md">
-              Premium farm-fresh chicken raised with traditional values and modern care
+              Premium farm-fresh chicken raised with wholesome practices and modern care.
             </p>
             <button
               className="mt-4 px-8 py-3 bg-red-700 text-white rounded-lg font-heading font-bold text-lg hover:bg-red-800 transition-all duration-300 shadow-md hover:shadow-lg"
@@ -44,9 +44,9 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onLearnMore }) => {
           </div>
         </div>
       </section>
-      <div className="w-full flex justify-center bg-white py-8">
-        <h2 className="text-2xl md:text-3xl font-heading font-bold text-gray-800 text-center">
-          Raising happy, healthy, wholesome chickens.
+      <div className="w-full flex justify-center bg-white py-2 pt-24">
+        <h2 className="text-4xl md:text-5xl font-heading font-bold text-red-700 text-center">
+          Raising Happy, Healthy, Wholesome Chickens.
         </h2>
       </div>
     </>

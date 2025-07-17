@@ -10,7 +10,7 @@ const VisionSection: React.FC = () => {
           <div className="space-y-8">
             <div>
               <h2 className="text-4xl md:text-6xl font-heading font-bold text-gray-900 mb-6">
-                Raising happy, healthy, wholesome chickens.
+                Raising Happy, Healthy, Wholesome Chickens.
                 <span className="text-red-700 block mt-2">for Your Family</span>
               </h2>
               
