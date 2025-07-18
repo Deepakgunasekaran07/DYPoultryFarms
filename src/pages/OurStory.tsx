@@ -103,7 +103,7 @@ const OurStory: React.FC = () => {
             </h2>
             <div className="w-24 h-1 bg-red-700 mx-auto mb-6"></div>
             <p className="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed font-body">
-              Four pillars that make DY Poultry Farms your trusted partner for premium, poultry with traditional farming values.
+              Four pillars that make DY Poultry Farms your trusted partner for premium poultry with traditional farming values.
             </p>
           </div>
 

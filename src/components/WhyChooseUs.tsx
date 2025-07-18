@@ -31,7 +31,7 @@ const WhyChooseUs: React.FC = () => {
           <div className="w-24 h-1 bg-red-700 mx-auto mb-6"></div>
           <p className="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed font-body">
             Four pillars that make DY Poultry Farms your trusted partner for 
-            premium, ethically-raised poultry with traditional farming values.
+            premium ethically-raised poultry with traditional farming values.
           </p>
         </div>
 
