@@ -158,10 +158,10 @@ const Sustainability: React.FC = () => {
       </section>
 
       {/* Bottom Image Section */}
-      <section className="relative h-[300px] overflow-hidden">
+      <section className="relative h-[300px] overflow-hidden bg-primary">
         <img
-          src="https://res.cloudinary.com/dlfitvhc0/image/upload/v1752584462/5a04ac7e-941d-412c-a175-34762d2256ff_audxjg.jpg"
-          alt="Footer Background"
+          src="https://res.cloudinary.com/dlfitvhc0/image/upload/v1754008399/Untitled_design_1_wnwgjr.png"
+          alt="Contact and Footer Background"
           className="w-full h-full object-cover object-bottom"
         />
       </section>
