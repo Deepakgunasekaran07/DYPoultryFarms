@@ -1,3 +1,4 @@
+// src/components/HeroSection.tsx
 import React from 'react';
 
 interface HeroSectionProps {
@@ -19,7 +20,6 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onLearnMore }) => {
         </div>
 
         <div className="relative z-10 w-full max-w-7xl mx-auto px-6 lg:px-12 flex justify-start items-center min-h-[90vh]">
-          {/* Content Aligned Left */}
           <div className="max-w-2xl space-y-6 text-left">
             <h1 className="text-4xl md:text-6xl font-bold text-white leading-tight drop-shadow-lg">
               From <span className="text-white">Family Farm</span> To{' '}
@@ -44,6 +44,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onLearnMore }) => {
           </div>
         </div>
       </section>
+
       <div className="w-full flex justify-center bg-white py-2 pt-24">
         <h2 className="text-4xl md:text-5xl font-heading font-bold text-red-700 text-center">
           Raising Happy, Healthy, Wholesome Chickens.

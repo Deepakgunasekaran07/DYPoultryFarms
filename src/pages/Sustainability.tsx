@@ -50,10 +50,10 @@ const Sustainability: React.FC = () => {
       <section className="flex flex-col md:flex-row w-full min-h-[60vh] pb-8 md:pb-16">
         {/* Left: Text */}
         <div className="w-full md:w-[35%] bg-gray-100 flex items-center justify-center px-4 py-8 md:py-0">
-          <h1 className="text-4xl md:text-5xl font-bold text-red-600 text-left">
-            Sustainability
-          </h1>
-        </div>
+  <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-red-600 text-left leading-tight">
+    Sustainability
+  </h1>
+</div>
 
         {/* Right: Image */}
         <div className="w-full md:w-[65%] h-[60vh]">
@@ -65,13 +65,12 @@ const Sustainability: React.FC = () => {
         </div>
       </section>
       <section className="max-w-6xl mx-auto px-6 pt-8 pb-20">
-        <div className="space-y-6 text-left">
-          <p className="text-lg md:text-xl text-neutral-700 leading-relaxed font-body">
-            To us, sustainability is about responsibly managing our land, water, and feed while upholding and advocating for the humane care of our most important responsibility which is our chickens.
-          </p>
-        </div>
-      </section>
-
+  <div className="space-y-6 text-left">
+    <p className="text-xl md:text-2xl text-neutral-700 leading-relaxed font-body">
+      To us, sustainability is about responsibly managing our land, water, and feed while upholding and advocating for the humane care of our most important responsibility which is our chickens.
+    </p>
+  </div>
+</section>
       {/* 1. Animal Welfare */}
       <section className="py-12 bg-amber-50 min-h-[50vh] flex items-center">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

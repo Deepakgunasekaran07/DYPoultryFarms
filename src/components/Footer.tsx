@@ -10,10 +10,10 @@ const Footer: React.FC<FooterProps> = ({ onPageChange }) => {
   return (
     <footer className="bg-black text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
           {/* Company Info with Logo */}
           <div className="lg:col-span-1">
-            <div className="flex flex-col md:flex-row items-center md:items-start md:space-x-6 mb-2">
+            <div className="flex flex-col md:flex-row items-center md:items-start md:space-x-6 mb-4">
               <div className="bg-white p-4 rounded-lg shadow-md border border-gray-200 flex-shrink-0">
                 <img 
                   src="/Dy Poultry Vertical Transparent.png" 
@@ -29,7 +29,7 @@ const Footer: React.FC<FooterProps> = ({ onPageChange }) => {
 
           {/* Quick Links */}
           <div className="lg:col-span-1 text-center lg:text-right">
-            <h4 className="font-heading font-bold text-white text-lg mb-2">Quick Links</h4>
+            <h4 className="font-heading font-bold text-white text-lg mb-3">Quick Links</h4>
             <ul className="space-y-2">
               <li>
                 <a
@@ -55,7 +55,11 @@ const Footer: React.FC<FooterProps> = ({ onPageChange }) => {
                   Sustainability
                 </a>
               </li>
-              <li><a href="#" className="text-gray-300 hover:text-white transition-colors duration-300 font-body">Visit Our Farm</a></li>
+              <li>
+                <a href="#" className="text-gray-300 hover:text-white transition-colors duration-300 font-body">
+                  Visit Our Farm
+                </a>
+              </li>
               <li>
                 <a
                   href="#"
@@ -71,32 +75,45 @@ const Footer: React.FC<FooterProps> = ({ onPageChange }) => {
             </ul>
           </div>
 
-          {/* Contact Info */}
+          {/* Contact Info & Locations */}
           <div className="lg:col-span-1 text-center lg:text-right">
-            <h4 className="font-heading font-bold text-white text-lg mb-2">Contact</h4>
-            <div className="space-y-2">
+            <h4 className="font-heading font-bold text-white text-lg mb-3">Contact</h4>
+            <div className="space-y-2 mb-4">
               <div className="flex items-center justify-center lg:justify-end space-x-3">
                 <Phone className="w-5 h-5 text-gray-400 flex-shrink-0" />
-                <span className="text-gray-300 font-body">+91 98765 43210</span>
+                <span className="text-gray-300 font-body">+91 99866 30246</span>
               </div>
               <div className="flex items-center justify-center lg:justify-end space-x-3">
                 <Mail className="w-5 h-5 text-gray-400 flex-shrink-0" />
                 <span className="text-gray-300 font-body">hello@dypoultryfarms.com</span>
               </div>
+            </div>
+
+            <h4 className="font-heading font-bold text-white text-lg mb-2">Locations</h4>
+            <div className="space-y-2 text-sm text-gray-300 font-body">
               <div className="flex items-start justify-center lg:justify-end space-x-3">
-                <MapPin className="w-5 h-5 text-gray-400 flex-shrink-0 mt-0.5" />
-                <span className="text-gray-300 font-body">Andhra Pradesh, India</span>
+                <MapPin className="w-5 h-5 text-gray-400 mt-0.5" />
+                <span>Andhra Pradesh, India</span>
               </div>
-              <div className="flex items-start justify-center lg:justify-end space-x-3 mt-1">
-                <MapPin className="w-5 h-5 text-gray-400 flex-shrink-0 mt-0.5" />
-                <span className="text-gray-300 font-body">Tamilnadu, India</span>
+              <div className="flex items-start justify-center lg:justify-end space-x-3">
+                <MapPin className="w-5 h-5 text-gray-400 mt-0.5" />
+                <span>Tamil Nadu, India</span>
+              </div>
+              <div className="flex items-start justify-center lg:justify-end space-x-3">
+                <MapPin className="w-5 h-5 text-gray-400 mt-0.5" />
+                <div>
+                  <span className="font-semibold">Head Office:</span><br />
+                  #171, 1st Floor, MTH Road,<br />
+                  Villivakkam, Chennai – 600049,<br />
+                  Tamil Nadu, India
+                </div>
               </div>
             </div>
           </div>
         </div>
 
         <div className="border-t border-gray-800 mt-6 pt-4 text-center">
-          <p className="text-gray-400 font-body">
+          <p className="text-gray-400 font-body text-sm">
             © 2024 DY Poultry Farms. All rights reserved.
           </p>
         </div>

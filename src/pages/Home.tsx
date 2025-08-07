@@ -1,4 +1,5 @@
-import React from 'react';
+// src/pages/Home.tsx
+import React, { useRef } from 'react';
 import HeroSection from '../components/HeroSection';
 import EthicalValues from '../components/EthicalValues';
 import type { Page } from '../App';
@@ -35,7 +36,6 @@ const MeetTheFarm: React.FC = () => {
       </div>
 
       <div className="relative max-w-5xl mx-auto pl-8 md:pl-16">
-        {/* Vertical Line */}
         <div className="absolute left-4 top-0 bottom-0 w-1 bg-gradient-to-b from-red-300 via-amber-300 to-emerald-400 rounded-full"></div>
 
         <div className="space-y-16">
@@ -44,21 +44,24 @@ const MeetTheFarm: React.FC = () => {
               key={index}
               className="flex items-center gap-6 md:gap-10 transition-all duration-300 hover:scale-[1.01]"
             >
-              {/* Circular Image */}
               <div className="w-20 h-20 md:w-24 md:h-24 rounded-full overflow-hidden shadow-lg border-4 border-white flex-shrink-0">
                 <img
                   src={feature.image}
                   alt={feature.title}
-                  className="w-full h-full object-cover" style={{ filter: 'brightness(1.15) contrast(1.15) saturate(1.1)' }}
+                  className="w-full h-full object-cover"
+                  style={{
+                    filter:
+                      'brightness(1.15) contrast(1.15) saturate(1.1)',
+                  }}
                 />
               </div>
-
-              {/* Text */}
               <div>
                 <h3 className="text-2xl font-semibold text-gray-800 mb-1">
                   {feature.title}
                 </h3>
-                <p className="text-gray-700 text-lg">{feature.description}</p>
+                <p className="text-gray-700 text-lg">
+                  {feature.description}
+                </p>
               </div>
             </div>
           ))}
@@ -73,24 +76,30 @@ interface HomeProps {
 }
 
 const Home: React.FC<HomeProps> = ({ onPageChange }) => {
+  const ethicsRef = useRef<HTMLDivElement | null>(null);
+
   const handleLearnMore = () => {
-    if (onPageChange) {
-      onPageChange('our-story');
-    }
+    ethicsRef.current?.scrollIntoView({ behavior: 'smooth' });
   };
+
   return (
     <div className="min-h-screen">
       <HeroSection onLearnMore={handleLearnMore} />
-      <EthicalValues />
+
+      {/* Scroll target for Learn More */}
+      <div ref={ethicsRef}>
+        <EthicalValues />
+      </div>
+
       <MeetTheFarm />
-      {/* Bottom Image Section - Full image visible */}
+
       <section className="relative h-[300px] overflow-hidden bg-primary">
-  <img
-    src="https://res.cloudinary.com/dlfitvhc0/image/upload/v1754008399/Untitled_design_1_wnwgjr.png"
-    alt="Contact and Footer Background"
-    className="w-full h-full object-cover object-bottom"
-  />
-</section>
+        <img
+          src="https://res.cloudinary.com/dlfitvhc0/image/upload/v1754008399/Untitled_design_1_wnwgjr.png"
+          alt="Contact and Footer Background"
+          className="w-full h-full object-cover object-bottom"
+        />
+      </section>
     </div>
   );
 };
