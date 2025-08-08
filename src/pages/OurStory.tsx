@@ -33,7 +33,7 @@ const OurStory: React.FC = () => {
             {/* Right Side - Frame */}
             <div className="relative flex items-center justify-center">
               <img
-                src="https://res.cloudinary.com/dlfitvhc0/image/upload/v1752758060/unnamed_1_u4jqjq.png"
+                src="https://res.cloudinary.com/dlfitvhc0/image/upload/v1754579801/5a7c4c7a-1c18-433d-b1b4-90fe95a28917_vkvc5y.jpg"
                 alt="Our Story Card"
                 className="w-full max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl h-80 md:h-96 rounded-3xl shadow-barn border-2 border-neutral-200 object-cover"
               />
