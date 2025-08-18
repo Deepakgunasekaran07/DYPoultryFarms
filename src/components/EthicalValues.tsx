@@ -15,7 +15,7 @@ const EthicalValues: React.FC = () => {
           {/* Card 1: Inside our Poultry Feed */}
           <div className="bg-amber-50 rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow duration-300">
             <img
-              src="https://res.cloudinary.com/dlfitvhc0/image/upload/v1754579932/a_ijco6m.jpg"
+              src="https://res.cloudinary.com/dlfitvhc0/image/upload/v1755415429/a_oen0d5.jpg"
               alt="Inside our Poultry Feed"
               className="w-full h-auto rounded-lg"
             />

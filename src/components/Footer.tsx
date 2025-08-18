@@ -1,5 +1,5 @@
 import React from 'react';
-import { Phone, Mail, MapPin } from 'lucide-react';
+import { Phone, Mail, MapPin, Instagram, Facebook, Linkedin, Twitter } from 'lucide-react';
 import type { Page } from '../App';
 
 interface FooterProps {
@@ -24,6 +24,41 @@ const Footer: React.FC<FooterProps> = ({ onPageChange }) => {
               <p className="text-gray-300 leading-relaxed font-body text-center md:text-left mt-4 md:mt-0 text-base">
                 Premium farm-fresh chicken raised with ethical practices and modern care techniques for the finest quality poultry.
               </p>
+            </div>
+            
+            {/* Social Media Links */}
+            <div className="mt-6">
+              <h4 className="font-heading font-bold text-white text-lg mb-3 text-center md:text-left">Follow Us</h4>
+              <div className="flex justify-center md:justify-start space-x-4">
+                <a
+                  href="#"
+                  className="text-gray-400 hover:text-white transition-colors duration-300 p-2 hover:bg-gray-800 rounded-lg"
+                  aria-label="Instagram"
+                >
+                  <Instagram className="w-6 h-6" />
+                </a>
+                <a
+                  href="#"
+                  className="text-gray-400 hover:text-white transition-colors duration-300 p-2 hover:bg-gray-800 rounded-lg"
+                  aria-label="Facebook"
+                >
+                  <Facebook className="w-6 h-6" />
+                </a>
+                <a
+                  href="#"
+                  className="text-gray-400 hover:text-white transition-colors duration-300 p-2 hover:bg-gray-800 rounded-lg"
+                  aria-label="LinkedIn"
+                >
+                  <Linkedin className="w-6 h-6" />
+                </a>
+                <a
+                  href="#"
+                  className="text-gray-400 hover:text-white transition-colors duration-300 p-2 hover:bg-gray-800 rounded-lg"
+                  aria-label="Twitter"
+                >
+                  <Twitter className="w-6 h-6" />
+                </a>
+              </div>
             </div>
           </div>
 
@@ -56,7 +91,14 @@ const Footer: React.FC<FooterProps> = ({ onPageChange }) => {
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-300 hover:text-white transition-colors duration-300 font-body">
+                <a
+                  href="#"
+                  className="text-gray-300 hover:text-white transition-colors duration-300 font-body"
+                  onClick={e => {
+                    e.preventDefault();
+                    if (onPageChange) onPageChange('gallery');
+                  }}
+                >
                   Visit Our Farm
                 </a>
               </li>
