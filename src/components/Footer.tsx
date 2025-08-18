@@ -31,28 +31,28 @@ const Footer: React.FC<FooterProps> = ({ onPageChange }) => {
               <h4 className="font-heading font-bold text-white text-lg mb-3 text-center md:text-left">Follow Us</h4>
               <div className="flex justify-center md:justify-start space-x-4">
                 <a
-                  href="#"
+                  href="https://www.linkedin.com/company/dy-poultry-farms/#"
                   className="text-gray-400 hover:text-white transition-colors duration-300 p-2 hover:bg-gray-800 rounded-lg"
                   aria-label="Instagram"
                 >
                   <Instagram className="w-6 h-6" />
                 </a>
                 <a
-                  href="#"
+                  href="https://www.linkedin.com/company/dy-poultry-farms/#"
                   className="text-gray-400 hover:text-white transition-colors duration-300 p-2 hover:bg-gray-800 rounded-lg"
                   aria-label="Facebook"
                 >
                   <Facebook className="w-6 h-6" />
                 </a>
                 <a
-                  href="#"
+                  href="https://www.linkedin.com/company/dy-poultry-farms/#"
                   className="text-gray-400 hover:text-white transition-colors duration-300 p-2 hover:bg-gray-800 rounded-lg"
                   aria-label="LinkedIn"
                 >
                   <Linkedin className="w-6 h-6" />
                 </a>
                 <a
-                  href="#"
+                  href="https://www.linkedin.com/company/dy-poultry-farms/#"
                   className="text-gray-400 hover:text-white transition-colors duration-300 p-2 hover:bg-gray-800 rounded-lg"
                   aria-label="Twitter"
                 >
